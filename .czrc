@@ -1,0 +1,15 @@
+{
+  "types": [
+    "feat",
+    "fix",
+    "refactor",
+    "test",
+    "chore"
+  ],
+  "scopes": [
+    "component",
+    "api",
+    "build"
+  ],
+  "allowCustomScopes": true
+}
