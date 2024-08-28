@@ -30,3 +30,9 @@ If we dont include so, we'll be thrown
 error: cannot spawn .husky/pre-commit: No such file or directory
 Couldn't start hook '.husky/pre-commit'
 ```
+
+# MISCELLANEOUS
+
+```
+npx husky add .husky/pre-push "npm run test""
+```
