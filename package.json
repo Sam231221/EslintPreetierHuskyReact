@@ -11,6 +11,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "cz-emoji": "1.3.2-canary.2",
     "cz-emoji-conventional": "^1.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -45,7 +46,8 @@
   },
   "config": {
     "commitizen": {
-      "path": "./node_modules/cz-emoji-conventional"
+      "path": "./node_modules/cz-conventional-changelog",
+      "conventional": true
     }
   }
 }
