@@ -13,3 +13,20 @@ npm run lint
 ```
 
 in sequence before for every commit.
+
+# NOTES
+
+1.Pre-commit hooks
+Following line is important although it prompts to remove.
+
+```
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+```
+
+If we dont include so, we'll be thrown
+
+```
+error: cannot spawn .husky/pre-commit: No such file or directory
+Couldn't start hook '.husky/pre-commit'
+```
