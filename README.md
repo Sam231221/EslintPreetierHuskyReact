@@ -1,6 +1,10 @@
 # INTRODUCTION
 
 Eslint, Prettier, Lint-Staged & Husky setup with PNPM
+For Commiting messages run the command
+```
+pnpm run commit
+```
 
 # PRECAP
 
