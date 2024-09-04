@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "commit": "git-cz",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src . --report-unused-disable-directives --max-warnings 0",
@@ -18,12 +19,14 @@
   "devDependencies": {
     "@commitlint/cli": "^19.4.1",
     "@commitlint/config-conventional": "^19.4.1",
-    "cz-emoji-conventional": "^1.0.2",
     "@eslint/js": "^9.9.1",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^4.0.0",
     "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-emoji-conventional": "^1.0.2",
+    "devmoji": "^2.3.0",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.0",
@@ -37,15 +40,9 @@
   "lint-staged": {
     "*.{js,jsx,ts,tsx,md,html,css}": "prettier --write"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "cz-git",
-      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
-    }
-  },
   "config": {
     "commitizen": {
-        "path": "node_modules/cz-emoji-conventional"
+      "path": "./node_modules/cz-emoji-conventional"
     }
   }
 }

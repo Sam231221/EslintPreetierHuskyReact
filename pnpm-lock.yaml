@@ -37,6 +37,12 @@ devDependencies:
   commitizen:
     specifier: ^4.3.0
     version: 4.3.0(@types/node@22.5.3)(typescript@5.5.4)
+  cz-conventional-changelog:
+    specifier: ^3.3.0
+    version: 3.3.0(@types/node@22.5.3)(typescript@5.5.4)
+  devmoji:
+    specifier: ^2.3.0
+    version: 2.3.0
   eslint:
     specifier: ^8.57.0
     version: 8.57.0
@@ -1138,6 +1144,11 @@ packages:
     engines: {node: '>=16'}
     dev: true
 
+  /commander@7.2.0:
+    resolution: {integrity: sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==}
+    engines: {node: '>= 10'}
+    dev: true
+
   /commitizen@4.3.0(@types/node@22.5.3)(typescript@5.5.4):
     resolution: {integrity: sha512-H0iNtClNEhT0fotHvGV3E9tDejDeS04sN1veIebsKYGMuGscFaswRoYJKmT3eW85eIJAs0F28bG2+a/9wCOfPw==}
     engines: {node: '>= 12'}
@@ -1364,6 +1375,15 @@ packages:
   /detect-indent@6.1.0:
     resolution: {integrity: sha512-reYkTUJAZb9gUuZ2RvVCNhVHdg62RHnJ7WJl8ftMi4diZ6NWlciOzQN88pUhSELEwflJht4oQDv0F0BMlwaYtA==}
     engines: {node: '>=8'}
+
+  /devmoji@2.3.0:
+    resolution: {integrity: sha512-ErQdYUsE7tKxqDzQzRos6fKWaRIFUOJvMkQODq9iYDI3o5X6nxD78XEdGNYaW5AaJW4uxj+XQTkCuJkV86Qg6g==}
+    hasBin: true
+    dependencies:
+      chalk: 4.1.2
+      commander: 7.2.0
+      ts-interface-checker: 1.0.0
+    dev: true
 
   /doctrine@2.1.0:
     resolution: {integrity: sha512-35mSku4ZXK0vfCuHEDAwt55dg2jNajHZ1odvF+8SSr82EsZY4QmXfuWso8oEd8zRhVObSN18aM0CjSdoBX7zIw==}
@@ -3303,6 +3323,10 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: 7.0.0
+
+  /ts-interface-checker@1.0.0:
+    resolution: {integrity: sha512-yUeWbFBDiwPodNqrqpvQpGWheL6PvNu2/pVAb9yy2vzdkkflCgwVA4U2akByPCXzYTum3/5/nB92yKuiLpSo/Q==}
+    dev: true
 
   /tslib@2.7.0:
     resolution: {integrity: sha512-gLXCKdN1/j47AiHiOkJN69hJmcbGTHI0ImLmbYLHykhgeN0jVGola9yVjFgzCUklsZQMW55o+dW7IXv3RCXDzA==}
